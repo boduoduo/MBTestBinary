@@ -1,0 +1,6 @@
+framework module MBTest {
+  umbrella header "MBTest-umbrella.h"
+
+  export *
+  module * { export * }
+}
