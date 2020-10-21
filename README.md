@@ -22,7 +22,7 @@ pod 'MBTest'
 
 ## Author
 
-boduoduo, maxb@yunjiglobal.com
+boduoduo
 
 ## License
 
