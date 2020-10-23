@@ -1,0 +1,16 @@
+{
+    "//": "archive-white-pod-list 不制作二进制白名单，",
+    "archive-white-pod-list" : [
+        
+    ],
+    "//": "ignore-git-list 不制作二进制 所属git白名单，",
+    "ignore-git-list": [
+        
+    ],
+     "//": "ignore-http-list 不制作二进制 所属https白名单，",
+    "ignore-http-list": [
+        
+    ],
+    "//": "xcode_build_path 设置编译缓存完整路径, 默认地址如下",
+    "xcode_build_path" : "xcode-build/Build/Intermediates.noindex/ArchiveIntermediates/#{target_name}/IntermediateBuildFilesPath/UninstalledProducts/iphoneos/",
+}

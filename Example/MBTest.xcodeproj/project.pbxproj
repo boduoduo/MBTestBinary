@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		1E4EFC8F7C3B57646644EF5C /* Pods_MBTest_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A7A57FCD0000492F6FACE1 /* Pods_MBTest_Tests.framework */; };
 		4F7B969F5DAD8FE5667AF44C /* Pods_MBTest_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D50564D10840334AFF24130 /* Pods_MBTest_Example.framework */; };
-		55520FD9253DCDB00016073B /* MBTestBinary.m in Sources */ = {isa = PBXBuildFile; fileRef = 55520FD8253DCDB00016073B /* MBTestBinary.m */; };
-		55520FDA253DCDB00016073B /* MBTestBinary.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 55520FD7253DCDB00016073B /* MBTestBinary.h */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -26,6 +24,12 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		E71A73772542CA9700401C9F /* UIImageView+extend.h in Headers */ = {isa = PBXBuildFile; fileRef = E71A73712542CA9700401C9F /* UIImageView+extend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E71A73782542CA9700401C9F /* UIView+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = E71A73722542CA9700401C9F /* UIView+Extend.m */; };
+		E71A73792542CA9700401C9F /* UIView+Extend.h in Headers */ = {isa = PBXBuildFile; fileRef = E71A73732542CA9700401C9F /* UIView+Extend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E71A737A2542CA9700401C9F /* UIColor+Extend.h in Headers */ = {isa = PBXBuildFile; fileRef = E71A73742542CA9700401C9F /* UIColor+Extend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E71A737B2542CA9700401C9F /* UIImageView+extend.m in Sources */ = {isa = PBXBuildFile; fileRef = E71A73752542CA9700401C9F /* UIImageView+extend.m */; };
+		E71A737C2542CA9700401C9F /* UIColor+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = E71A73762542CA9700401C9F /* UIColor+Extend.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,19 +49,16 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				55520FDA253DCDB00016073B /* MBTestBinary.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0B0F2FFE5BEB20E06CBEA9E6 /* MBTest.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MBTest.podspec; path = ../MBTest.podspec; sourceTree = "<group>"; };
+		0B0F2FFE5BEB20E06CBEA9E6 /* MBTest.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MBTest.podspec; path = ../MBTest.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2D50564D10840334AFF24130 /* Pods_MBTest_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MBTest_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		314729CCE354AB6911FF6026 /* Pods-MBTest_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBTest_Example.release.xcconfig"; path = "Target Support Files/Pods-MBTest_Example/Pods-MBTest_Example.release.xcconfig"; sourceTree = "<group>"; };
 		55520FD5253DCDB00016073B /* libMBTestBinary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMBTestBinary.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		55520FD7253DCDB00016073B /* MBTestBinary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MBTestBinary.h; sourceTree = "<group>"; };
-		55520FD8253DCDB00016073B /* MBTestBinary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBTestBinary.m; sourceTree = "<group>"; };
 		5F5538F420B763BDB129CEE4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* MBTest_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBTest_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -83,6 +84,12 @@
 		B2E6F8AF687A5C827BE290DF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B520444491FBB996F4BD717D /* Pods-MBTest_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBTest_Tests.release.xcconfig"; path = "Target Support Files/Pods-MBTest_Tests/Pods-MBTest_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D49E8007B6A8DFFE036DC0F6 /* Pods-MBTest_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBTest_Example.debug.xcconfig"; path = "Target Support Files/Pods-MBTest_Example/Pods-MBTest_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		E71A73712542CA9700401C9F /* UIImageView+extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+extend.h"; path = "../../MBTest/Classes/UIImageView+extend.h"; sourceTree = "<group>"; };
+		E71A73722542CA9700401C9F /* UIView+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Extend.m"; path = "../../MBTest/Classes/UIView+Extend.m"; sourceTree = "<group>"; };
+		E71A73732542CA9700401C9F /* UIView+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Extend.h"; path = "../../MBTest/Classes/UIView+Extend.h"; sourceTree = "<group>"; };
+		E71A73742542CA9700401C9F /* UIColor+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Extend.h"; path = "../../MBTest/Classes/UIColor+Extend.h"; sourceTree = "<group>"; };
+		E71A73752542CA9700401C9F /* UIImageView+extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+extend.m"; path = "../../MBTest/Classes/UIImageView+extend.m"; sourceTree = "<group>"; };
+		E71A73762542CA9700401C9F /* UIColor+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Extend.m"; path = "../../MBTest/Classes/UIColor+Extend.m"; sourceTree = "<group>"; };
 		F269103A11BCC423D317AB45 /* Pods-MBTest_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MBTest_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MBTest_Tests/Pods-MBTest_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F6A7A57FCD0000492F6FACE1 /* Pods_MBTest_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MBTest_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -123,8 +130,12 @@
 		55520FD6253DCDB00016073B /* MBTestBinary */ = {
 			isa = PBXGroup;
 			children = (
-				55520FD7253DCDB00016073B /* MBTestBinary.h */,
-				55520FD8253DCDB00016073B /* MBTestBinary.m */,
+				E71A73742542CA9700401C9F /* UIColor+Extend.h */,
+				E71A73762542CA9700401C9F /* UIColor+Extend.m */,
+				E71A73712542CA9700401C9F /* UIImageView+extend.h */,
+				E71A73752542CA9700401C9F /* UIImageView+extend.m */,
+				E71A73732542CA9700401C9F /* UIView+Extend.h */,
+				E71A73722542CA9700401C9F /* UIView+Extend.m */,
 			);
 			path = MBTestBinary;
 			sourceTree = "<group>";
@@ -239,6 +250,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E71A737A2542CA9700401C9F /* UIColor+Extend.h in Headers */,
+				E71A73772542CA9700401C9F /* UIImageView+extend.h in Headers */,
+				E71A73792542CA9700401C9F /* UIView+Extend.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +451,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55520FD9253DCDB00016073B /* MBTestBinary.m in Sources */,
+				E71A737B2542CA9700401C9F /* UIImageView+extend.m in Sources */,
+				E71A737C2542CA9700401C9F /* UIColor+Extend.m in Sources */,
+				E71A73782542CA9700401C9F /* UIView+Extend.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

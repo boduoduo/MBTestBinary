@@ -3,16 +3,16 @@
   "version": "0.1.0",
   "summary": "A short description of MBTest.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/boduoduo/MBTest",
+  "homepage": "https://github.com/boduoduo/MBTestBinary",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "boduoduo": "maxb@yunjiglobal.com"
+    "boduoduo": "maxb@qq.com"
   },
   "source": {
-    "git": "https://github.com/boduoduo/MBTest.git",
+    "git": "https://github.com/boduoduo/MBTestBinary.git",
     "tag": "0.1.0"
   },
   "platforms": {

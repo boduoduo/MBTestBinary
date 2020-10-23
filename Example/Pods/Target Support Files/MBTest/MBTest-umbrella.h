@@ -11,6 +11,7 @@
 #endif
 
 #import "UIColor+Extend.h"
+#import "UIImageView+Extend.h"
 #import "UIView+Extend.h"
 
 FOUNDATION_EXPORT double MBTestVersionNumber;
