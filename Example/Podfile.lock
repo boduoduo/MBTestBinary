@@ -14,11 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - MBTest (0.1.1):
-    - AFNetworking (~> 3.0)
-    - MBTest/framework (= 0.1.1)
-    - SDWebImage (~> 5.0)
-  - MBTest/framework (0.1.1):
+  - MBTest/source (0.1.1):
     - AFNetworking (~> 3.0)
     - SDWebImage (~> 5.0)
   - SDWebImage (5.9.4):
@@ -26,7 +22,7 @@ PODS:
   - SDWebImage/Core (5.9.4)
 
 DEPENDENCIES:
-  - MBTest (from `../`)
+  - MBTest/source (from `../`)
 
 SPEC REPOS:
   trunk:
@@ -42,6 +38,6 @@ SPEC CHECKSUMS:
   MBTest: 55525bb77f4db891a322259592b37e73eea46c45
   SDWebImage: b69257f4ab14e9b6a2ef53e910fdf914d8f757c1
 
-PODFILE CHECKSUM: 0f43923a060ba80734552b97885947a42dd2d178
+PODFILE CHECKSUM: d6274214fb7185fcb62e30a1c55944f761846184
 
 COCOAPODS: 1.8.4

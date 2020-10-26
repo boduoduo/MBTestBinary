@@ -3,7 +3,7 @@ use_frameworks!
 platform :ios, '9.0'
 
 target 'MBTest_Example' do
-  pod 'MBTest', :path => '../'
+  pod 'MBTest/source', :path => '../'
 
   target 'MBTest_Tests' do
     inherit! :search_paths
