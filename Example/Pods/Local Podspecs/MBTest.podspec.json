@@ -1,6 +1,6 @@
 {
   "name": "MBTest",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "A short description of MBTest.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/boduoduo/MBTestBinary",
@@ -13,12 +13,12 @@
   },
   "source": {
     "git": "https://github.com/boduoduo/MBTestBinary.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "MBTest/Classes/**/*",
+  "default_subspecs": "framework",
   "dependencies": {
     "AFNetworking": [
       "~> 3.0"
@@ -26,5 +26,17 @@
     "SDWebImage": [
       "~> 5.0"
     ]
-  }
+  },
+  "subspecs": [
+    {
+      "name": "source",
+      "source_files": "MBTest/Classes/**/*"
+    },
+    {
+      "name": "framework",
+      "ios": {
+        "vendored_frameworks": "MBTest-0.1.0/ios/MBTest.embeddedframework/*.framework"
+      }
+    }
+  ]
 }

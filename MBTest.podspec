@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MBTest'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of MBTest.'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,16 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'MBTest/Classes/**/*'
+  #  s.source_files = 'MBTest/Classes/**/*'
+
+  s.default_subspec = 'framework'
+  s.subspec 'source' do |source|
+    source.source_files = 'MBTest/Classes/**/*'
+  end
+
+  s.subspec 'framework' do |framework|
+    framework.ios.vendored_frameworks = 'MBTest-0.1.0/ios/MBTest.embeddedframework/*.framework'
+  end
   
   # s.resource_bundles = {
   #   'MBTest' => ['MBTest/Assets/*.png']
